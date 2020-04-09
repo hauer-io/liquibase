@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/test
+    username: admin
+    password: secret
+    initialization-mode: always
