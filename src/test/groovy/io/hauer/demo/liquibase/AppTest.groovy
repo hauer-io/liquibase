@@ -5,13 +5,13 @@ import org.springframework.boot.test.context.SpringBootTest
 import spock.lang.Specification
 
 @SpringBootTest
-class InMemoryTest extends Specification {
+class AppTest extends Specification {
 
     @Autowired
     CiteRepo repo
 
-    def "load test"() {
+    def "repo has data"() {
         expect:
-        repo.count() == 4
+        repo.count() > 0
     }
 }

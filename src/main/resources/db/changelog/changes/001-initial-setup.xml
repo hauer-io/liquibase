@@ -5,11 +5,13 @@
     <changeSet id="001" author="jabo">
         <createSequence sequenceName="hibernate_sequence" startValue="10000" incrementBy="1"/>
 
-        <createTable tableName="cite">
-            <column name="id" type="BIGINT" autoIncrement="true">
-                <constraints nullable="false" primaryKey="true"/>
-            </column>
-            <column name="text" type="VARCHAR(255)"/>
-        </createTable>
+
+<!--        FIXME: Add table the test is green -->
+<!--        <createTable tableName="cite">-->
+<!--            <column name="id" type="BIGINT" autoIncrement="true">-->
+<!--                <constraints nullable="false" primaryKey="true"/>-->
+<!--            </column>-->
+<!--            <column name="text" type="VARCHAR(255)"/>-->
+<!--        </createTable>-->
     </changeSet>
 </databaseChangeLog>
